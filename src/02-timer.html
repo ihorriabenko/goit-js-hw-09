@@ -9,9 +9,6 @@
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
-
     <div class="timer">
       <div class="field">
         <span class="value" data-days>00</span>
@@ -30,7 +27,46 @@
         <span class="label">Seconds</span>
       </div>
     </div>
+    <div class="container">
+      <input type="text" id="datetime-picker" />
+      <button type="button" data-start>Start</button>
+    </div>
 
-    <script src="js/02-timer.js"></script>
+
+    <style>
+      .timer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .value {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 27px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 20px;
+      }
+
+      button {
+        margin-left: 5px;
+
+        border: none;
+      }
+    </style>
+
+    <script type="module" src="js/02-timer.js"></script>
   </body>
 </html>
